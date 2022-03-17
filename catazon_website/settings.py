@@ -39,6 +39,7 @@ SECRET_KEY = env("SECRET_KEY")
 DEBUG = True
 
 ALLOWED_HOSTS = ["catazon-project.herokuapp.com"]
+CSRF_TRUSTED_ORIGINS = ['catazon-project.herokuapp.com']
 
 
 # Application definition
@@ -67,7 +68,7 @@ ROOT_URLCONF = 'catazon_website.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
