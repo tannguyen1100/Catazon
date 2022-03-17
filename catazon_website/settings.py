@@ -39,7 +39,7 @@ SECRET_KEY = env("SECRET_KEY")
 DEBUG = True
 
 ALLOWED_HOSTS = ["catazon-project.herokuapp.com"]
-CSRF_TRUSTED_ORIGINS = ['catazon-project.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = ['https://catazon-project.herokuapp.com']
 
 
 # Application definition
