@@ -24,7 +24,7 @@ env = environ.Env(
 )
 environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
-RTPORT = os.getenv("PORT", default="5000")
+PORT = os.getenv("PORT", default="5000")
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 
